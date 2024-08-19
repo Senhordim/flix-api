@@ -1,83 +1,26 @@
 [
     {
-        "label": "os",
-        "kind": 6,
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "get_asgi_application",
-        "importPath": "django.core.asgi",
-        "description": "django.core.asgi",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.core.asgi",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "get_wsgi_application",
-        "importPath": "django.core.wsgi",
-        "description": "django.core.wsgi",
-        "isExtraImport": true,
-        "detail": "django.core.wsgi",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -105,27 +48,59 @@
         "documentation": {}
     },
     {
-        "label": "Genre",
-        "importPath": "genres.models",
-        "description": "genres.models",
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
         "isExtraImport": true,
-        "detail": "genres.models",
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
-        "label": "Genre",
-        "importPath": "genres.models",
-        "description": "genres.models",
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
         "isExtraImport": true,
-        "detail": "genres.models",
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
-        "label": "Genre",
-        "importPath": "genres.models",
-        "description": "genres.models",
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
         "isExtraImport": true,
-        "detail": "genres.models",
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Actor",
+        "importPath": "actors.models",
+        "description": "actors.models",
+        "isExtraImport": true,
+        "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "Actor",
+        "importPath": "actors.models",
+        "description": "actors.models",
+        "isExtraImport": true,
+        "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "Actor",
+        "importPath": "actors.models",
+        "description": "actors.models",
+        "isExtraImport": true,
+        "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -153,11 +128,164 @@
         "documentation": {}
     },
     {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ActorCreateListView",
+        "importPath": "actors.views",
+        "description": "actors.views",
+        "isExtraImport": true,
+        "detail": "actors.views",
+        "documentation": {}
+    },
+    {
+        "label": "ActorRetrieveUpdateDestroyView",
+        "importPath": "actors.views",
+        "description": "actors.views",
+        "isExtraImport": true,
+        "detail": "actors.views",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
+        "isExtraImport": true,
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
         "documentation": {}
     },
     {
@@ -183,6 +311,87 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "actors.migrations.0001_initial",
+        "description": "actors.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Actor',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=200)),",
+        "detail": "actors.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ActorAdmin",
+        "kind": 6,
+        "importPath": "actors.admin",
+        "description": "actors.admin",
+        "peekOfCode": "class ActorAdmin(admin.ModelAdmin):\n    list_display = ('name', 'date_of_birth', 'nationality', 'created_at', 'updated_at')",
+        "detail": "actors.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ActorsConfig",
+        "kind": 6,
+        "importPath": "actors.apps",
+        "description": "actors.apps",
+        "peekOfCode": "class ActorsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'actors'",
+        "detail": "actors.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Actor",
+        "kind": 6,
+        "importPath": "actors.models",
+        "description": "actors.models",
+        "peekOfCode": "class Actor(models.Model):\n    name = models.CharField(max_length=200)\n    date_of_birth = models.DateField(null=True, blank=True)\n    nationality = models.CharField(\n        max_length=100,\n        choices=COUNTRY_CHOICES,\n        blank=True,\n        null=True\n    )\n    created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "COUNTRY_CHOICES",
+        "kind": 5,
+        "importPath": "actors.models",
+        "description": "actors.models",
+        "peekOfCode": "COUNTRY_CHOICES = (\n    ('USA', 'United States'),\n    ('UK', 'United Kingdom'),\n    ('IND', 'India'),\n    ('AUS', 'Australia'),\n    ('CAN', 'Canada'),\n    ('JPN', 'Japan'),\n    ('FRA', 'France'),\n    ('GER', 'Germany'),\n    ('ITA', 'Italy'),",
+        "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "ActorSerializer",
+        "kind": 6,
+        "importPath": "actors.serializers",
+        "description": "actors.serializers",
+        "peekOfCode": "class ActorSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Actor\n        fields = '__all__'",
+        "detail": "actors.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "actors.urls",
+        "description": "actors.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', ActorCreateListView.as_view(), name='actors'),\n    path('<int:pk>', ActorRetrieveUpdateDestroyView.as_view(), name='actor_detail_update_and_delete'),\n]",
+        "detail": "actors.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ActorCreateListView",
+        "kind": 6,
+        "importPath": "actors.views",
+        "description": "actors.views",
+        "peekOfCode": "class ActorCreateListView(generics.ListCreateAPIView):\n    queryset = Actor.objects.all()\n    serializer_class = ActorSerializer\nclass ActorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Actor.objects.all()\n    serializer_class = ActorSerializer",
+        "detail": "actors.views",
+        "documentation": {}
+    },
+    {
+        "label": "ActorRetrieveUpdateDestroyView",
+        "kind": 6,
+        "importPath": "actors.views",
+        "description": "actors.views",
+        "peekOfCode": "class ActorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Actor.objects.all()\n    serializer_class = ActorSerializer",
+        "detail": "actors.views",
         "documentation": {}
     },
     {
@@ -235,7 +444,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'genres',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_yasg',\n    'genres',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -253,7 +462,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "ROOT_URLCONF = 'core.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'core.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -262,7 +471,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -348,11 +557,20 @@
         "documentation": {}
     },
     {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "core.urls",
+        "description": "core.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Movie API - Curso PyBR\",\n      default_version='v1',\n      description=\"API para gerenciar filmes, gêneros e atores.\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contato@startamus.com.br\"),\n      license=openapi.License(name=\"Licença BSD\"),\n   ),\n   public=True,",
+        "detail": "core.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "core.urls",
         "description": "core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('genres/', include('genres.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('genres/', include('genres.urls')),\n    path('actors/', include('actors.urls')),\n    # DOCS API\n    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),\n    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n]",
         "detail": "core.urls",
         "documentation": {}
     },
