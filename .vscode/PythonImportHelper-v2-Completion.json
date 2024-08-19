@@ -41,6 +41,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -49,11 +57,19 @@
         "documentation": {}
     },
     {
-        "label": "JsonResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -65,11 +81,11 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -81,6 +97,62 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "isExtraImport": true,
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -89,11 +161,19 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "GenreCreateListView",
+        "importPath": "genres.views",
+        "description": "genres.views",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "genres.views",
+        "documentation": {}
+    },
+    {
+        "label": "GenreRetrieveUpdateDestroyView",
+        "importPath": "genres.views",
+        "description": "genres.views",
+        "isExtraImport": true,
+        "detail": "genres.views",
         "documentation": {}
     },
     {
@@ -146,7 +226,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'genres'",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -155,7 +235,7 @@
         "kind": 5,
         "importPath": "core.settings",
         "description": "core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'genres'\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'genres',\n]",
         "detail": "core.settings",
         "documentation": {}
     },
@@ -268,20 +348,11 @@
         "documentation": {}
     },
     {
-        "label": "hello_view",
-        "kind": 2,
-        "importPath": "core.urls",
-        "description": "core.urls",
-        "peekOfCode": "def hello_view(request):\n    return JsonResponse({\n        \"movies\": [\n            {\"title\": \"The Shawshank Redemption\", \"release_year\": 1994},\n        ]\n    })\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('hello/', hello_view),\n]",
-        "detail": "core.urls",
-        "documentation": {}
-    },
-    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "core.urls",
         "description": "core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('hello/', hello_view),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('genres/', include('genres.urls')),\n]",
         "detail": "core.urls",
         "documentation": {}
     },
@@ -295,12 +366,75 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "genres.migrations.0001_initial",
+        "description": "genres.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Genre',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "genres.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "GenreAdmin",
+        "kind": 6,
+        "importPath": "genres.admin",
+        "description": "genres.admin",
+        "peekOfCode": "class GenreAdmin(admin.ModelAdmin):\n    list_display = ('name', 'created_at', 'updated_at')\n    search_fields = ('name',)\n    list_filter = ('created_at', 'updated_at')\n    date_hierarchy = 'created_at'\n    ordering = ('-created_at',)\n    readonly_fields = ('created_at', 'updated_at')",
+        "detail": "genres.admin",
+        "documentation": {}
+    },
+    {
         "label": "GenresConfig",
         "kind": 6,
         "importPath": "genres.apps",
         "description": "genres.apps",
         "peekOfCode": "class GenresConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'genres'",
         "detail": "genres.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Genre",
+        "kind": 6,
+        "importPath": "genres.models",
+        "description": "genres.models",
+        "peekOfCode": "class Genre(models.Model):\n    name = models.CharField(max_length=100)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.name",
+        "detail": "genres.models",
+        "documentation": {}
+    },
+    {
+        "label": "GenreSerializer",
+        "kind": 6,
+        "importPath": "genres.serializers",
+        "description": "genres.serializers",
+        "peekOfCode": "class GenreSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Genre\n        fields = '__all__'",
+        "detail": "genres.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "genres.urls",
+        "description": "genres.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', GenreCreateListView.as_view(), name='genre_list_all'),\n    path('<int:pk>', GenreRetrieveUpdateDestroyView.as_view(), name='genre_detail_update_and_delete'),\n]",
+        "detail": "genres.urls",
+        "documentation": {}
+    },
+    {
+        "label": "GenreCreateListView",
+        "kind": 6,
+        "importPath": "genres.views",
+        "description": "genres.views",
+        "peekOfCode": "class GenreCreateListView(generics.ListCreateAPIView):\n    queryset = Genre.objects.all()\n    serializer_class = GenreSerializer\nclass GenreRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Genre.objects.all()\n    serializer_class = GenreSerializer",
+        "detail": "genres.views",
+        "documentation": {}
+    },
+    {
+        "label": "GenreRetrieveUpdateDestroyView",
+        "kind": 6,
+        "importPath": "genres.views",
+        "description": "genres.views",
+        "peekOfCode": "class GenreRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Genre.objects.all()\n    serializer_class = GenreSerializer",
+        "detail": "genres.views",
         "documentation": {}
     },
     {
