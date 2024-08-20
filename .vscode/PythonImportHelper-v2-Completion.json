@@ -72,6 +72,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -133,6 +165,14 @@
         "description": "actors.models",
         "isExtraImport": true,
         "detail": "actors.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -216,6 +256,30 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -280,19 +344,11 @@
         "documentation": {}
     },
     {
-        "label": "ActorCreateListView",
-        "importPath": "actors.views",
-        "description": "actors.views",
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
         "isExtraImport": true,
-        "detail": "actors.views",
-        "documentation": {}
-    },
-    {
-        "label": "ActorRetrieveUpdateDestroyView",
-        "importPath": "actors.views",
-        "description": "actors.views",
-        "isExtraImport": true,
-        "detail": "actors.views",
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -369,22 +425,6 @@
         "documentation": {}
     },
     {
-        "label": "GenreCreateListView",
-        "importPath": "genres.views",
-        "description": "genres.views",
-        "isExtraImport": true,
-        "detail": "genres.views",
-        "documentation": {}
-    },
-    {
-        "label": "GenreRetrieveUpdateDestroyView",
-        "importPath": "genres.views",
-        "description": "genres.views",
-        "isExtraImport": true,
-        "detail": "genres.views",
-        "documentation": {}
-    },
-    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -410,19 +450,52 @@
         "documentation": {}
     },
     {
-        "label": "MovieCreateListView",
-        "importPath": "movies.views",
-        "description": "movies.views",
+        "label": "Movie",
+        "importPath": "movies.models",
+        "description": "movies.models",
         "isExtraImport": true,
-        "detail": "movies.views",
+        "detail": "movies.models",
         "documentation": {}
     },
     {
-        "label": "MovieRetrieveUpdateDestroyView",
-        "importPath": "movies.views",
-        "description": "movies.views",
+        "label": "django.core.validators",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "movies.views",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "importPath": "reviews.models",
+        "description": "reviews.models",
+        "isExtraImport": true,
+        "detail": "reviews.models",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "importPath": "reviews.models",
+        "description": "reviews.models",
+        "isExtraImport": true,
+        "detail": "reviews.models",
         "documentation": {}
     },
     {
@@ -493,7 +566,7 @@
         "kind": 5,
         "importPath": "actors.urls",
         "description": "actors.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', ActorCreateListView.as_view(), name='actors'),\n    path('<int:pk>', ActorRetrieveUpdateDestroyView.as_view(), name='actor_detail_update_and_delete'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('actors/', views.ActorCreateListView.as_view(), name='actors'),\n    path('actors/<int:pk>', views.ActorRetrieveUpdateDestroyView.as_view(), name='actor_detail_update_and_delete'),\n]",
         "detail": "actors.urls",
         "documentation": {}
     },
@@ -691,7 +764,7 @@
         "kind": 5,
         "importPath": "core.urls",
         "description": "core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('genres/', include('genres.urls')),\n    path('actors/', include('actors.urls')),\n    path('movies/', include('movies.urls')),\n    # DOCS API\n    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),\n    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/v1/', include('genres.urls')),\n    path('api/v1/', include('actors.urls')),\n    path('api/v1/', include('movies.urls')),\n    path('api/v1/', include('reviews.urls')),\n    # DOCS API\n    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),\n    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n]",
         "detail": "core.urls",
         "documentation": {}
     },
@@ -718,7 +791,7 @@
         "kind": 6,
         "importPath": "genres.admin",
         "description": "genres.admin",
-        "peekOfCode": "class GenreAdmin(admin.ModelAdmin):\n    list_display = ('name', 'created_at', 'updated_at')\n    search_fields = ('name',)\n    list_filter = ('created_at', 'updated_at')\n    date_hierarchy = 'created_at'\n    ordering = ('-created_at',)\n    readonly_fields = ('created_at', 'updated_at')",
+        "peekOfCode": "class GenreAdmin(admin.ModelAdmin):\n    list_display = ('name', 'created_at', 'updated_at')",
         "detail": "genres.admin",
         "documentation": {}
     },
@@ -754,7 +827,7 @@
         "kind": 5,
         "importPath": "genres.urls",
         "description": "genres.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', GenreCreateListView.as_view(), name='genre_list_all'),\n    path('<int:pk>', GenreRetrieveUpdateDestroyView.as_view(), name='genre_detail_update_and_delete'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('genres/', views.GenreCreateListView.as_view(), name='genre_list_all'),\n    path('genres/<int:pk>', views.GenreRetrieveUpdateDestroyView.as_view(), name='genre_detail_update_and_delete'),\n]",
         "detail": "genres.urls",
         "documentation": {}
     },
@@ -826,7 +899,7 @@
         "kind": 5,
         "importPath": "movies.urls",
         "description": "movies.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', MovieCreateListView.as_view(), name='movies_list_all'),\n    path('<int:pk>', MovieRetrieveUpdateDestroyView.as_view(), name='movie_detail_update_and_delete'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('movies/', views.MovieCreateListView.as_view(), name='movies_list_all'),\n    path('movies/<int:pk>', views.MovieRetrieveUpdateDestroyView.as_view(), name='movie_detail_update_and_delete'),\n]",
         "detail": "movies.urls",
         "documentation": {}
     },
@@ -846,6 +919,78 @@
         "description": "movies.views",
         "peekOfCode": "class MovieRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Movie.objects.all()\n    serializer_class = MovieSerializer",
         "detail": "movies.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "reviews.migrations.0001_initial",
+        "description": "reviews.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('movies', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Review',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "reviews.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewAdmin",
+        "kind": 6,
+        "importPath": "reviews.admin",
+        "description": "reviews.admin",
+        "peekOfCode": "class ReviewAdmin(admin.ModelAdmin):\n    list_display = ('content', 'rating', 'movie', 'created_at', 'updated_at')",
+        "detail": "reviews.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewsConfig",
+        "kind": 6,
+        "importPath": "reviews.apps",
+        "description": "reviews.apps",
+        "peekOfCode": "class ReviewsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'reviews'",
+        "detail": "reviews.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "reviews.models",
+        "description": "reviews.models",
+        "peekOfCode": "class Review(models.Model):\n    content = models.TextField()\n    rating = models.IntegerField(\n      validators=[\n          MinValueValidator(1, 'Avaliação não pode ser inferior a 0'),\n          MaxValueValidator(5, 'Avaliação não pode ser superior a 5')\n      ]\n    )\n    movie = models.ForeignKey(\n        Movie,",
+        "detail": "reviews.models",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewSerializer",
+        "kind": 6,
+        "importPath": "reviews.serializers",
+        "description": "reviews.serializers",
+        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Review\n        fields = '__all__'",
+        "detail": "reviews.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "reviews.urls",
+        "description": "reviews.urls",
+        "peekOfCode": "urlpatterns = [\n    path('reviews/', views.ReviewCreateListView.as_view(), name='review_list_all'),\n    path('reviews/<int:pk>', views.ReviewRetrieveUpdateDestroyView.as_view(), name='review_detail_update_and_delete'),\n]",
+        "detail": "reviews.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewCreateListView",
+        "kind": 6,
+        "importPath": "reviews.views",
+        "description": "reviews.views",
+        "peekOfCode": "class ReviewCreateListView(generics.ListCreateAPIView):\n    queryset = Review.objects.all()\n    serializer_class = ReviewSerializer\nclass ReviewRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Review.objects.all()\n    serializer_class = ReviewSerializer",
+        "detail": "reviews.views",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewRetrieveUpdateDestroyView",
+        "kind": 6,
+        "importPath": "reviews.views",
+        "description": "reviews.views",
+        "peekOfCode": "class ReviewRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):\n    queryset = Review.objects.all()\n    serializer_class = ReviewSerializer",
+        "detail": "reviews.views",
         "documentation": {}
     },
     {
